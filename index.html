@@ -3,309 +3,325 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DEEPAK ENGINEERING | Electrical Project Solutions</title>
+<title>DEEPAK ENGINEERING</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
 
-html{
-    scroll-behavior:smooth;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    color:#333;
-    background:#f8f9fb;
+background:#f5f7fb;
+color:#333;
 }
 
-.navbar{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:#0d47a1;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:1000;
+header{
+background:#0d47a1;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .logo{
-    color:#fff;
-    font-size:24px;
-    font-weight:700;
+font-size:28px;
+font-weight:700;
 }
 
-.navbar ul{
-    display:flex;
-    list-style:none;
-}
-
-.navbar ul li{
-    margin-left:25px;
-}
-
-.navbar ul li a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:500;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
 }
 
 .hero{
-    min-height:100vh;
-    background:linear-gradient(rgba(13,71,161,.8),rgba(13,71,161,.8)),
-    url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400') center/cover;
-    display:flex;
-    align-items:center;
-    color:#fff;
-    padding:0 8%;
+height:85vh;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('TRANSFARMER.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
 }
 
-.hero-content h1{
-    font-size:55px;
-    margin-bottom:15px;
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
 }
 
-.hero-content p{
-    font-size:20px;
-    margin-bottom:25px;
-    max-width:700px;
+.hero p{
+font-size:20px;
+max-width:800px;
 }
 
 .btn{
-    display:inline-block;
-    background:#ff9800;
-    color:#fff;
-    padding:14px 30px;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:600;
+display:inline-block;
+margin-top:25px;
+background:#ffb300;
+color:black;
+padding:15px 30px;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
 }
 
 section{
-    padding:90px 8%;
+padding:80px 8%;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
+.title{
+text-align:center;
+margin-bottom:40px;
 }
 
-.section-title h2{
-    font-size:36px;
-    color:#0d47a1;
+.title h2{
+font-size:38px;
+color:#0d47a1;
 }
 
-.about p{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    line-height:1.8;
+.about{
+text-align:center;
+max-width:1000px;
+margin:auto;
+line-height:1.8;
 }
 
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.service-box{
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    text-align:center;
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.service-box h3{
-    color:#0d47a1;
-    margin-bottom:10px;
+.card h3{
+color:#0d47a1;
+margin-bottom:10px;
 }
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
 
 .gallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:12px;
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .contact{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
+background:#0d47a1;
+color:white;
+border-radius:20px;
+padding:50px;
+text-align:center;
 }
 
 .contact p{
-    margin:10px 0;
+margin:10px 0;
+font-size:18px;
 }
 
-.footer{
-    background:#082b63;
-    color:white;
-    text-align:center;
-    padding:20px;
+footer{
+background:#082c68;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:30px;
-    box-shadow:0 4px 10px rgba(0,0,0,.3);
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
 @media(max-width:768px){
 
-.hero-content h1{
-    font-size:38px;
+.hero h1{
+font-size:36px;
 }
 
-.navbar{
-    flex-direction:column;
+header{
+flex-direction:column;
 }
 
-.navbar ul{
-    margin-top:10px;
+nav{
+margin-top:10px;
 }
+
 }
+
 </style>
 </head>
-
 <body>
 
-<nav class="navbar">
-    <div class="logo">DEEPAK ENGINEERING</div>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<header>
+<div class="logo">DEEPAK ENGINEERING</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
+</header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Complete Electrical Project Solutions</h1>
-        <p>
-            Expert services in Cable Laying, Transformer Installation,
-            Electrical Panels, LCS, JB, Testing, Commissioning and Industrial Electrical Projects.
-        </p>
-        <a href="#contact" class="btn">Get Quote</a>
-    </div>
+
+<div>
+<h1>DEEPAK ENGINEERING</h1>
+
+<p>
+Professional Electrical Contractor for Cable Laying, Transformer Installation,
+Electrical Panels, LCS, JB, Testing & Commissioning.
+</p>
+
+<a href="#contact" class="btn">Get Free Quote</a>
+
+</div>
+
 </section>
 
-<section id="about" class="about">
-    <div class="section-title">
-        <h2>About Us</h2>
-    </div>
+<section id="about">
 
-    <p>
-        DEEPAK ENGINEERING is a trusted electrical contracting company delivering
-        high-quality industrial and commercial electrical solutions. We specialize
-        in cable laying, transformer installation, panel erection, LCS & JB installation,
-        testing, commissioning, and complete project execution with safety and quality.
-    </p>
+<div class="title">
+<h2>About Us</h2>
+</div>
+
+<div class="about">
+DEEPAK ENGINEERING provides complete electrical project solutions including HT/LT cable laying, transformer installation, panel erection, LCS, JB installation, testing, commissioning and maintenance services for industrial and commercial projects.
+</div>
+
 </section>
 
 <section id="services">
-    <div class="section-title">
-        <h2>Our Services</h2>
-    </div>
 
-    <div class="services">
-
-        <div class="service-box">
-            <h3>Electrical Projects</h3>
-            <p>Complete electrical project execution.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Cable Laying</h3>
-            <p>HT & LT underground cable installation.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Transformer Works</h3>
-            <p>Installation, testing and commissioning.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Panel Installation</h3>
-            <p>PCC, MCC, APFC and Control Panels.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>LCS & JB</h3>
-            <p>Local Control Station & Junction Box installation.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>Maintenance</h3>
-            <p>Electrical maintenance and troubleshooting.</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="gallery">
-    <div class="section-title">
-        <h2>Project Gallery</h2>
-    </div>
-
-    <div class="gallery">
-        <img src="YOUR_IMAGE_1.jpg" alt="Electrical Project">
-        <img src="YOUR_IMAGE_2.jpg" alt="Cable Laying">
-        <img src="YOUR_IMAGE_3.jpg" alt="Transformer Installation">
-        <img src="YOUR_IMAGE_4.jpg" alt="Panel Installation">
-        <img src="YOUR_IMAGE_5.jpg" alt="Electrical Work">
-        <img src="YOUR_IMAGE_6.jpg" alt="Industrial Project">
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <div class="section-title">
-        <h2 style="color:white;">Contact Us</h2>
-    </div>
-
-    <p><strong>DEEPAK ENGINEERING</strong></p>
-    <p>📞 +91 7566868930</p>
-    <p>📧 deepakvit1947@gmail.com</p>
-    <p>📍 Baara Bypass Road, Kanpur, Uttar Pradesh, India</p>
-
-    <br>
-
-    <a class="btn" href="https://wa.me/917566868930" target="_blank">
-        WhatsApp Now
-    </a>
-</section>
-
-<div class="footer">
-    © 2026 DEEPAK ENGINEERING | All Rights Reserved
+<div class="title">
+<h2>Our Services</h2>
 </div>
 
-<a class="whatsapp" href="https://wa.me/917566868930" target="_blank">
-☎
+<div class="services">
+
+<div class="card">
+<h3>Cable Laying</h3>
+<p>HT & LT cable laying and tray installation.</p>
+</div>
+
+<div class="card">
+<h3>Transformer Installation</h3>
+<p>Transformer erection and commissioning.</p>
+</div>
+
+<div class="card">
+<h3>Electrical Panels</h3>
+<p>PCC, MCC, APFC and control panel installation.</p>
+</div>
+
+<div class="card">
+<h3>LCS & JB</h3>
+<p>Local Control Station and Junction Box works.</p>
+</div>
+
+<div class="card">
+<h3>Testing & Commissioning</h3>
+<p>Complete electrical testing services.</p>
+</div>
+
+<div class="card">
+<h3>Maintenance</h3>
+<p>Preventive and breakdown maintenance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<div class="title">
+<h2>Our Projects</h2>
+</div>
+
+<div class="gallery">
+
+<img src="tray-cable-laying-services.jpg" alt="Cable Laying">
+
+<img src="Control-pannel-board.jpeg" alt="Control Panel">
+
+<img src="TRANSFARMER.jpg" alt="Transformer">
+
+<img src="electrical project.jpg" alt="Electrical Project">
+
+<img src="industrial project.jpg" alt="Industrial Project">
+
+<img src="electrical work.jpg" alt="Electrical Work">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>DEEPAK ENGINEERING</strong></p>
+
+<p>📞 +91 8305540896</p>
+
+<p>📧 deepakvit1947@gmail.com</p>
+
+<p>📍 Baara Bypass Road, Kanpur, Uttar Pradesh</p>
+
+<p>Electrical Projects | Cable Laying | Transformer | Panels | LCS | JB</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 DEEPAK ENGINEERING | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918305540896" target="_blank">
+💬
 </a>
 
 </body>
